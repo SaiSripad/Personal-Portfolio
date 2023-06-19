@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d3789a2e14.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div id='header'>
+
+      <div class="container">
+
+        <nav>
+          <a href="#" class="sripad"><span>S</span>ripad.</a>
+          <ul id="sidemenu">
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text row">
+          <div class="col-1">
+            <p class="webdev">Web Developer</p>
+            <h1>Hi, I'm <span>Sai Sripad</span> Vemula</h1>
+            <p>a final year BTech student with strong interest in Software Development. Passionate about Coding and seeking exciting job opportunities to apply my skills and contribute to innovative projects.</p>
+          </div>
+          <div class="col-2">
+            <img src="images/sripad6.jpeg" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/sripad4.jpeg" alt="">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I am a final year B.Tech student at Nit Andhra Pradesh pursuing Electrical & Electronics Engineering, who is very interested in Software Development and Machine Learning. I've developed a strong foundation in Data Structures & Algorithms, Python programming through classes and independent projects. I also have Web Development knowledge and a growing interest in Machine Learning. I'm eager to use my expertise to contribute to creative projects and gain practical experience during a summer internship in the tech sector.</p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            </div>
+            <div class="tab-contents active-tab" id='skills'>
+              <ul>
+                <li><span>Frontend Development</span><br>HTML, CSS, Javascript</li>
+                <li><span>Backend Development</span><br>DSA with Python</li>
+                <li><span>Machine Learning</span><br>Aware of basics and worked on few projects as well</li>
+                <li><span>DBMS</span><br>Basics of MYSQL</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id='education'>
+              <ul>
+                <li><span>Secondary Education</span><br>Sri Viswasanthi Educational Institutions<br>Marks: 451/500</li>
+                <li><span>Senior Secondary Education, PCM</span><br>Sri Viswasanthi Educational Institutions<br>Marks: 467/500</li>
+                <li><span>Bachleor of Technology - B.Tech</span><br>Electrical and Electronics Engineering<br>National Institue of Technology, Andhra Pradesh<br>Grade: 8.69 CGPA</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Summer Internship</span><br>National Institue of Technology, Warangal<br><span>Project: </span>Colorization of Historical Black & White Images<br>
+                  <ul>
+                    <li>Developed a computer vision project using OpenCV to colorize historical images.</li>
+                    <li>Implemented a deep learning-based approach that uses Dense Neural Networks</li>
+                    <li>Resulted in an effective and efficient method for colorizing black and white images from historical archives.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Frontend Development</h2>
+            <p>I've created responsive websites that demonstrate my abilities, such as a dynamic Tindog website and a personal portfolio. I created aesthetically pleasing and user-friendly experiences that smoothly adjust across various platforms using HTML, CSS, and JavaScript in conjunction with the Bootstrap framework.</p>
+            <a href="https://github.com/SaiSripad?tab=repositories">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-server"></i>
+            <h2>Backend Development</h2>
+            <p>I successfully developed a Pdf to Word Converter project using Python. I created a reliable and effective method for converting PDF files into Word documents by utilising the strength of Python and frameworks like Flask.</p>
+            <a href="https://github.com/SaiSripad?tab=repositories">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-robot"></i>
+            <h2>Machine Learning</h2>
+            <p>Throughout my machine learning journey, I have successfully completed projects in diverse domains. From colorizing historical black and white images using deep learning techniques to improving wind energy prediction, I have harnessed the power of deep learning and applied it to deliver innovative solutions. With a passion for exploring the depths of machine learning, I strive to leverage its potential for real-world applications.</p>
+            <a href="https://github.com/SaiSripad?tab=repositories">Learn More</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> saisripad2003@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 8341334281</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/sripad.vemula_543/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://twitter.com/Sripad_Vemula"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/sripad-vemula/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/SaiSripad"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="images/Sripad Resume.pdf" download id="download-button">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input class="name" type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+            <span id="msg"></span>
+
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Sai Sripad Vemula.</p>
+      </div>
+
+    </div>
+
+    <script src="script.js">
+
+    </script>
+
+  </body>
+</html>
